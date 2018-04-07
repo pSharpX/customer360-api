@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gildemeister.Cliente360.Domain\Gildemeister.Cliente360.Domain.csproj" />
+    <ProjectReference Include="..\Gildemeister.Cliente360.Infrastructure\Gildemeister.Cliente360.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

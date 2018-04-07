@@ -1,0 +1,42 @@
+﻿ //Dictionary<string, StoredProcedureParameter> parameters = new Dictionary<string, StoredProcedureParameter>();
+            //parameters.Add("ParametroId", new StoredProcedureParameter() { Value =  1 });
+
+            ////clienteRepository.ExecuteNonQueryWithReturnParameters("", parameters);
+
+
+
+
+			 // GET: api/Cliente
+        [HttpGet]
+        [Route("ListarClientes", Name = "GetCliente")]
+        public ServiceResult Get(int pageNo = 1, int pageSize = 10)
+        {
+
+            ServiceResult service = new ServiceResult();
+            try
+            {
+                int total = 0;
+                ///Listar cliente por ORM Paginado
+                IEnumerable<ClienteDTO> clienteList = clienteService.GetAll();
+
+                var linkBuilder = new PageLinkBuilder(Url, "GetCliente", null, pageNo, pageSize, total);
+
+                var jsonData = from f in clienteList.AsEnumerable()
+                               select new
+                               {
+                                   //ClienteId = f.ClienteId,
+                                   //Nombre = f.Nombre,
+                                   //Apellidos = f.Apellidos,
+                                   //Edad = f.Edad
+                               };
+
+                service.Data = jsonData;
+                service.Paginate(linkBuilder);
+            }
+            catch (Exception ex)
+            {
+                service.Errors(ex);
+                _logger.LogError(ex);
+            }
+            return service;
+        }

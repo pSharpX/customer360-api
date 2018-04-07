@@ -1,0 +1,13 @@
+﻿
+
+        
+            /*
+            var reqparm = new System.Collections.Specialized.NameValueCollection();
+            reqparm.Add("key", "admin");
+            string responsebytes = client.UploadString("http://localhost:54703/api/Seguridad/UsuarioLogin", "POST", parsedContent);
+           string responsebody = Encoding.UTF8.GetString(responsebytes);
+
+            client.Headers.Add("content-type", "application/json");
+            string s = Encoding.ASCII.GetString(client.UploadData("http://localhost:54703/api/Seguridad/UsuarioLogin", "POST", Encoding.Default.GetBytes("{\"aplicacion\": \"admin@admin.com\" ")));
+            string response = Encoding.ASCII.GetString(client.UploadData("http://localhost:54703/api/Seguridad/UsuarioLogin", "POST", Encoding.Default.GetBytes(strEncryptred)));
+            */

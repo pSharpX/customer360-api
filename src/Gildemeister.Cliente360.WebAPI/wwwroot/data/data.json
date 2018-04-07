@@ -1,0 +1,43 @@
+﻿{
+  "Key": "b9c079c4-46b9-4ef3-a0ee-5d9b5fa41ca3",
+  "RequestType": "1",
+  "IdTipoProceso": "2",
+  "Data": {
+    "Id": 38,
+    "Nombres": "LUCAS FELIPE",
+    "ApellidoPaterno": "MONTES",
+    "ApellidoMaterno": "RAMOS",
+    "RazonSocial": "ESTEBAN",
+    "FechaNacimiento": "2017-12-21T05:00:00Z",
+    "CodigoTipoPersona": "0001",
+    "NumeroDocumento": "40719510",
+    "NumeroDocumentoOriginal": "40719510",
+    "CodigoTipoDocumento": "01",
+    "Email": "jcardenaspruebas@qnet.pe",
+    "Telefono": "9123456236",
+    "Celular": "9123456237",
+    "CodigoSexo": "0002",
+    "CodigoEstadoCivil": "01",
+    "Direccion": {
+      "Id": 13356,
+      "Direccion": "AVENIDA PARQUE DEL SUR1",
+      "CodigoDepartamento": "15",
+      "CodigoProvincia": "01",
+      "CodigoDistrito": "22",
+      "CodigoPais": "1",
+      "CodigoPostal": "051"
+    },
+    "Contacto": {
+      "Id": 20,
+      "Nombres": "GISELLA",
+      "ApellidoPaterno": "CASTILLO",
+      "ApellidoMaterno": "ALVARADO",
+      "NumeroDocumento": "08396888",
+      "CodigoTipoDocumento": "01",
+      "Email": "jcardenaspruebas@info.com",
+      "Telefono": "0000000000",
+      "Celular": "0000000000",
+      "CodigoSexo": "0001"
+    }
+  }
+}
